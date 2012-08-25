@@ -46,10 +46,7 @@
 - (IBAction)process
 {
     self.spinner.center = self.view.center;
-    // make center using cgpointfromstring - first create a string with format from scalex and y
-    NSString *spinnerScaleAsString = [NSString stringWithFormat:@"{%@,%@}", self.scaleX.text, self.scaleY.text];
-    CGPoint spinnerScale = CGPointFromString(spinnerScaleAsString);
-    self.spinner.transform = CGAffineTransformMakeScale(spinnerScale.x, spinnerScale.x);
+    self.spinner.transform = CGAffineTransformMakeScale([self.scaleX.text doubleValue], [self.scaleY.text doubleValue]);
     // spinner.frame = CGRectMake(self.view.center.x, self.view.center.y, 60, 60);
     self.spinner.hidesWhenStopped = YES;
     [self.view addSubview:self.spinner];
