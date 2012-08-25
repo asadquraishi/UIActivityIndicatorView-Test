@@ -82,21 +82,21 @@
     switch (sender.tag) {
         case kUIActivityIndicatorViewStyleWhiteLarge:
             self.spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-            [self.whiteLargeSwitch setOn:YES animated:YES];
+            [sender setOn:YES animated:YES];
             [self.whiteSwitch setOn:NO animated:YES];
             [self.graySwitch setOn:NO animated:YES];
             break;
         case kUIActivityIndicatorViewStyleWhite:
             self.spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhite;
             [self.whiteLargeSwitch setOn:NO animated:YES];
-            [self.whiteSwitch setOn:YES animated:YES];
+            [sender setOn:YES animated:YES];
             [self.graySwitch setOn:NO animated:YES];
             break;
         case kUIActivityIndicatorViewStyleGray:
             self.spinner.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
             [self.whiteLargeSwitch setOn:NO animated:YES];
             [self.whiteSwitch setOn:NO animated:YES];
-            [self.graySwitch setOn:YES animated:YES];
+            [sender setOn:YES animated:YES];
             break;
         default:
             break;
