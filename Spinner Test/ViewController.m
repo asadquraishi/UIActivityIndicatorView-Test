@@ -27,7 +27,6 @@
 @end
 
 @implementation ViewController
-@synthesize label = _label;
 @synthesize scaleX = _scaleX;
 @synthesize scaleY = _scaleY;
 @synthesize whiteLargeSwitch = _whiteLargeSwitch;
@@ -45,6 +44,7 @@
 
 - (IBAction)process
 {
+    [self.view endEditing:YES];
     self.spinner.center = self.view.center;
     self.spinner.transform = CGAffineTransformMakeScale([self.scaleX.text doubleValue], [self.scaleY.text doubleValue]);
     // spinner.frame = CGRectMake(self.view.center.x, self.view.center.y, 60, 60);
@@ -61,7 +61,6 @@
         
         // do any UI stuff on the main UI thread
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.label.text = @"After!";
             [self.spinner stopAnimating];
             // NSLog(@"scaleX = %@", self.scaleX.text);
             // NSLog(@"scaleY = %@", self.scaleY.text);
@@ -140,7 +139,6 @@
     [super viewDidLoad];
     self.scaleX.text = @"1.0";
     self.scaleY.text = @"1.0";
-    self.label.text = @"Before";
     self.whiteLargeSwitch.on = YES;
     self.whiteSwitch.on = NO;
     self.graySwitch.on = NO;

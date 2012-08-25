@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 
-@property (nonatomic, weak) IBOutlet UILabel *label;
 @property (nonatomic, weak) IBOutlet UILabel *redLabel;
 @property (nonatomic, weak) IBOutlet UILabel *blueLabel;
 @property (nonatomic, weak) IBOutlet UILabel *greenLabel;
