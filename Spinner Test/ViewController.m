@@ -162,7 +162,7 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         return NO;
     } else {
-        return YES;
+        return NO;
     }
 }
 
