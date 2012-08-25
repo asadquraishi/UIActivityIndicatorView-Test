@@ -10,4 +10,19 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UILabel *label;
+@property (nonatomic, weak) IBOutlet UILabel *redLabel;
+@property (nonatomic, weak) IBOutlet UILabel *blueLabel;
+@property (nonatomic, weak) IBOutlet UILabel *greenLabel;
+@property (nonatomic, weak) IBOutlet UILabel *alphaLabel;
+@property (nonatomic, weak) IBOutlet UITextField *scaleX;
+@property (nonatomic, weak) IBOutlet UITextField *scaleY;
+@property (nonatomic, weak) IBOutlet UISwitch *whiteLargeSwitch;
+@property (nonatomic, weak) IBOutlet UISwitch *whiteSwitch;
+@property (nonatomic, weak) IBOutlet UISwitch *graySwitch;
+
+
+- (IBAction)setSpinnerType:(UISwitch *)sender;
+- (IBAction)setColour:(UISlider *)sender;
+
 @end

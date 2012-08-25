@@ -79,8 +79,6 @@
 		7EA2F83C15E6520300730C0E /* Spinner Test */ = {
 			isa = PBXGroup;
 			children = (
-				7EA2F84515E6520300730C0E /* AppDelegate.h */,
-				7EA2F84615E6520300730C0E /* AppDelegate.m */,
 				7EA2F84815E6520300730C0E /* MainStoryboard_iPhone.storyboard */,
 				7EA2F84B15E6520400730C0E /* MainStoryboard_iPad.storyboard */,
 				7EA2F84E15E6520400730C0E /* ViewController.h */,
@@ -93,6 +91,8 @@
 		7EA2F83D15E6520300730C0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7EA2F84515E6520300730C0E /* AppDelegate.h */,
+				7EA2F84615E6520300730C0E /* AppDelegate.m */,
 				7EA2F83E15E6520300730C0E /* Spinner Test-Info.plist */,
 				7EA2F83F15E6520300730C0E /* InfoPlist.strings */,
 				7EA2F84215E6520300730C0E /* main.m */,
